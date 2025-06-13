@@ -25,12 +25,12 @@ const AboutPage = () => {
         playsInline
         className="absolute top-0 left-0 w-full h-full object-cover z-0"
       >
-        <source src="/images/trial_upfeu_pixel.mp4" type="video/mp4" />
+        <source src="/images/pixelsamplevideocomingsoon.mp4" type="video/mp4" />
         Your browser does not support the video tag.
       </video>
 
       {/* music */}
-      <audio ref={audioRef} src="/images/arcade sirena_mixdown.wav" loop />
+      <audio ref={audioRef} src="/images/arcade sirena_mixdown.mp3" loop />
 
       {/* dark overlay here */}
       <div className="absolute inset-0 bg-black/70 bg-opacity-80 z-10" />
