@@ -1,12 +1,7 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
-  basePath: '/saribuo',
-  trailingSlash: true,
-  eslint: {
-    ignoreDuringBuilds: true,
-  },
+ //no output
 };
 
 export default nextConfig;

@@ -17,7 +17,7 @@ const AboutPage = () => {
 
   return (
     <main className="min-h-screen bg-white text-gray-800 overflow-hidden">
-      {/* Video Background */}
+      {/*background*/}
       <video
         autoPlay
         loop
@@ -29,13 +29,13 @@ const AboutPage = () => {
         Your browser does not support the video tag.
       </video>
 
-      {/* Audio */}
+      {/* music */}
       <audio ref={audioRef} src="/images/arcade sirena_mixdown.wav" loop />
 
-      {/* Overlay */}
-      <div className="absolute inset-0 bg-black/40 bg-opacity-80 z-10" />
+      {/* dark overlay here */}
+      <div className="absolute inset-0 bg-black/70 bg-opacity-80 z-10" />
 
-      {/* Content */}
+      {/* content */}
       <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-4 text-center text-white">
         <h1
           className="text-4xl sm:text-6xl md:text-7xl font-bold mb-4 font-pixelify"
@@ -47,7 +47,7 @@ const AboutPage = () => {
           className="max-w-sm sm:max-w-xl text-sm sm:text-lg px-2 font-pixelify"
           style={{ fontFamily: pixelify.style.fontFamily }}
         >
-          06&nbsp;&nbsp;&nbsp;23&nbsp;&nbsp;&nbsp;2025
+        06&nbsp;&nbsp;&nbsp;23&nbsp;&nbsp;&nbsp;2025
         </p>
 
         {!audioStarted && (
