@@ -41,7 +41,7 @@ const AboutPage = () => {
           className="text-4xl sm:text-6xl md:text-7xl font-bold mb-4 font-pixelify"
           style={{ fontFamily: pixelify.style.fontFamily }}
         >
-          coming soon
+          coming soon.
         </h1>
         <p
           className="max-w-sm sm:max-w-xl text-sm sm:text-lg px-2 font-pixelify"
