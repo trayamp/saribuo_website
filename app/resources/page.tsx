@@ -12,10 +12,14 @@ const ResourcesPage = () => {
         {resources.map((item, idx) => (
           <ResourcesCard
             key={idx}
+            id={item.id}
             title={item.title}
             description={item.description}
             image={item.image}
+            author={item.author}
+            Link={item.Link}
           />
+
         ))}
       </div>
     </main>
