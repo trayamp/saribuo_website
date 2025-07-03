@@ -3,6 +3,7 @@ import { Roboto } from "next/font/google";
 import "./globals.css";
 import ResponsiveNav from "@/components/Home/Navbar/ResponsiveNav";
 import Footer from "@/components/Home/Footer/Footer";
+import Head from "next/head"; // <-- Add this if needed (optional with app dir)
 
 const font = Roboto({
   weight: ["300", "400", "500", "600", "700"],
@@ -21,9 +22,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body
-        className={`${font.className}`}
-      >
+      <head>
+        <link rel="icon" href="/favicon.ico" />
+        {/* Optional: preload fonts or add meta tags */}
+      </head>
+      <body className={font.className}>
         <ResponsiveNav />
         {children}
         <Footer />
