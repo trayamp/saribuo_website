@@ -4,13 +4,13 @@ import React, { useEffect, useState, useRef, TouchEvent } from 'react';
 import Image from 'next/image';
 
 const images: string[] = [
-  '/images/pic1.jpg', //pic natin then title "Saribuo" then Far eastern university - intitute of technology
-  '/images/pic 2.webp', //Pride march documentation
-  '/images/pic 3.webp', //behind the scene (interview random FEU students)
-  '/images/pic 2.webp', // office of GADD PIC WITH THE TEAM
-  '/images/pic 3.webp', // FEU SAGA??? HMMMM???
-  '/images/pic 4.jpg', //interview around ubelt
-  '/images/pic 2.webp', //behind the scenes (game programming)
+  '/images/first_page.jpg',
+  '/images/pridewan.webp', 
+  '/images/pridetu.webp', 
+  '/images/pridetri.webp',
+  '/images/adultthingbg.jpg', 
+  '/images/pridewan.webp', 
+  '/images/coding_slide.jpg', 
 ];
 
 const Hero = () => {

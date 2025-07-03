@@ -47,7 +47,7 @@ const AboutPage = () => {
           className="max-w-sm sm:max-w-xl text-sm sm:text-lg px-2 font-pixelify"
           style={{ fontFamily: pixelify.style.fontFamily }}
         >
-        06&nbsp;&nbsp;&nbsp;23&nbsp;&nbsp;&nbsp;2025
+        09&nbsp;&nbsp;&nbsp;13&nbsp;&nbsp;&nbsp;2025
         </p>
 
         {!audioStarted && (
