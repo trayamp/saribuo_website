@@ -12,7 +12,7 @@ const font = Roboto({
 
 export const metadata: Metadata = {
   title: "Saribuo",
-  description: "Everyone deserves love",
+  description: "sari-saring kasarian buong-buo ang kalooban ",
 };
 
 export default function RootLayout({

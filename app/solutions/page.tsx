@@ -21,7 +21,7 @@ const SolutionsPage = () => {
           </div>
           <h1 className="text-4xl sm:text-6xl md:text-7xl font-bold mb-4">saribuo</h1>
           <p className="max-w-sm sm:max-w-xl text-sm sm:text-lg px-2">
-            sari-saring kasarian · buong buong kalooban
+            sari-saring kasarian · buong-buo ang kalooban
           </p>
         </div>
       </div>
