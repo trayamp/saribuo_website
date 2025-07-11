@@ -3,29 +3,30 @@
 import React, { useEffect, useState, useRef, TouchEvent } from 'react';
 import Image from 'next/image';
 
-const images: string[] = [
-  '/images/first_page.jpg',
-  '/images/pridewan.webp', 
-  '/images/pridetu.webp', 
-  '/images/pridetri.webp',
-  '/images/pridefor.jpg', 
-  '/images/pridefayb.jpg', 
-  '/images/pridesiks.jpg', 
+// Image list with photo credits
+const slides = [
+  { src: '/images/first_page.jpg', credit: ' Photo by Justin Fernando' },
+  { src: '/images/pridewan.webp', credit: ' Photo by Justin Fernando' },
+  { src: '/images/pridetu.webp', credit: ' Photo by Justin Fernando' },
+  { src: '/images/pridetri.webp', credit: ' Photo by Justin Fernando' },
+  { src: '/images/pridefor.jpg', credit: ' Photo by Rey Quijano' },
+  { src: '/images/pridefayb.jpg', credit: ' Photo by Rey Quijano' },
+  { src: '/images/pridesiks.jpg', credit: ' Photo by Rey Quijano' },
 ];
 
 const Hero = () => {
   const [current, setCurrent] = useState<number>(0);
   const touchStartX = useRef<number | null>(null);
 
-  // slide show time here
+  // slide timing
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrent((prev) => (prev + 1) % images.length);
+      setCurrent((prev) => (prev + 1) % slides.length);
     }, 7000);
     return () => clearInterval(interval);
   }, []);
 
-  // Swiping effect
+  // swipe epeks
   const handleTouchStart = (e: TouchEvent) => {
     touchStartX.current = e.touches[0].clientX;
   };
@@ -34,23 +35,23 @@ const Hero = () => {
     if (touchStartX.current === null) return;
     const diff = e.changedTouches[0].clientX - touchStartX.current;
     if (diff > 50) {
-      setCurrent((prev) => (prev - 1 + images.length) % images.length);
+      setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
     } else if (diff < -50) {
-      setCurrent((prev) => (prev + 1) % images.length);
+      setCurrent((prev) => (prev + 1) % slides.length);
     }
     touchStartX.current = null;
   };
 
-  // Manual clicking (next)
-  const goToPrev = () => setCurrent((prev) => (prev - 1 + images.length) % images.length);
-  const goToNext = () => setCurrent((prev) => (prev + 1) % images.length);
+  // nav buttons
+  const goToPrev = () => setCurrent((prev) => (prev - 1 + slides.length) % slides.length);
+  const goToNext = () => setCurrent((prev) => (prev + 1) % slides.length);
 
   return (
-  <div className="w-full bg-white">
-    {/* Mobile-only white space spacer */}
-    <div className="h-[64px] bg-white md:hidden" />
+    <div className="w-full bg-white">
+      {/* Mobile navbar spacer */}
+      <div className="h-[64px] bg-white md:hidden" />
 
-    <div className="flex justify-center items-center w-full mx-auto min-h-[240px] md:min-h-0">
+      <div className="flex justify-center items-center w-full mx-auto min-h-[240px] md:min-h-0">
         <div
           className="
             relative
@@ -64,26 +65,29 @@ const Hero = () => {
           onTouchStart={handleTouchStart}
           onTouchEnd={handleTouchEnd}
         >
-          {/* Slides container */}
+          {/* Slides wrapper */}
           <div
             className="flex h-full w-full transition-transform duration-700 ease-in-out"
             style={{ transform: `translateX(-${current * 100}%)` }}
           >
-            {images.map((src, i) => (
+            {slides.map((slide, i) => (
               <div key={i} className="relative flex-shrink-0 w-full h-full">
                 <Image
-                  src={src}
+                  src={slide.src}
                   alt={`Slide ${i + 1}`}
                   fill
                   className="object-cover"
                   priority={i === 0}
                   sizes="(max-width: 768px) 95vw, 100vw"
                 />
+                <p className="absolute bottom-2 right-2 text-xs text-white px-2 py-1 rounded-sm">
+                  {slide.credit}
+                </p>
               </div>
             ))}
           </div>
 
-          {/* Left Arrow */}
+          {/* Previous button */}
           <button
             aria-label="Previous slide"
             onClick={goToPrev}
@@ -99,7 +103,7 @@ const Hero = () => {
             </svg>
           </button>
 
-          {/* Right Arrow */}
+          {/* next button */}
           <button
             aria-label="Next slide"
             onClick={goToNext}
@@ -115,18 +119,16 @@ const Hero = () => {
             </svg>
           </button>
 
-          {/* small circles */}
+          {/* smol dots */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2 z-20">
-            {images.map((_, i) => (
+            {slides.map((_, i) => (
               <button
                 key={i}
                 aria-label={`Go to slide ${i + 1}`}
                 onClick={() => setCurrent(i)}
-                className={`
-                  w-3 h-3 rounded-full border border-white
-                  transition-colors duration-300
-                  ${i === current ? 'bg-white' : 'bg-white/50'}
-                `}
+                className={`w-3 h-3 rounded-full border border-white ${
+                  i === current ? 'bg-white' : 'bg-white/50'
+                }`}
               />
             ))}
           </div>
