@@ -39,7 +39,7 @@ export const resources: Resource[] = [
     image: "/images/comingoutstories.jpg",
     author: "It's an adult thing!",
     title: "Our Coming Out Stories",
-    description: "Owning our sexuality is not always an easy journey. So let;s discuss questions about being queer, discovering your sexuality & gender identity, coming out, and upholding equal rights across all orientations.",
+    description: "Owning our sexuality is not always an easy journey. So let's discuss questions about being queer, discovering your sexuality & gender identity, coming out, and upholding equal rights across all orientations.",
     Link: "https://open.spotify.com/episode/49tx5Aj3AboTKi6SA9wiSL?si=8df37f137d874213",
   },
     {

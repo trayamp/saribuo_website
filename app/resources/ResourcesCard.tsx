@@ -20,10 +20,10 @@ const ResourcesCard = ({ image, title, author, description, Link }: Resource) =>
           loading="lazy"
         />
       </div>
-      <div className="p-8">
-        <p className="text-sm text-gray-600 mb-1">{author}</p>
-        <h3 className="text-2xl text-gray-800 font-semibold mb-2 hover:text-purple-900">{title}</h3>
-        <p className="text-sm text-gray-500">{description}</p>
+      <div className="p-4 flex flex-col flex-grow">
+        <p className="text-sm text-gray-600 truncate">{author}</p>
+        <h3 className="text-2xl text-gray-800 font-semibold mb-2 hover:text-purple-900 truncate">{title}</h3>
+        <p className="text-sm text-gray-500 mt-1 line-clamp-2">{description}</p>
       </div>
     </a>
     </Tilt>

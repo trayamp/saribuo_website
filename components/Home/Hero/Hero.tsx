@@ -8,9 +8,9 @@ const images: string[] = [
   '/images/pridewan.webp', 
   '/images/pridetu.webp', 
   '/images/pridetri.webp',
-  '/images/adultthingbg.jpg', 
-  '/images/pridewan.webp', 
-  '/images/coding_slide.jpg', 
+  '/images/pridefor.jpg', 
+  '/images/pridefayb.jpg', 
+  '/images/pridesiks.jpg', 
 ];
 
 const Hero = () => {
@@ -46,8 +46,11 @@ const Hero = () => {
   const goToNext = () => setCurrent((prev) => (prev + 1) % images.length);
 
   return (
-    <div className="w-full bg-white">
-      <div className="flex justify-center items-center w-full mx-auto min-h-[240px] md:min-h-0">
+  <div className="w-full bg-white">
+    {/* Mobile-only white space spacer */}
+    <div className="h-[64px] bg-white md:hidden" />
+
+    <div className="flex justify-center items-center w-full mx-auto min-h-[240px] md:min-h-0">
         <div
           className="
             relative

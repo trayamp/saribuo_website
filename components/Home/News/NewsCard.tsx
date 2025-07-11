@@ -28,7 +28,7 @@ const NewsCard = ({news}:Props) => {
             <Image src={news.image} alt={news.title} fill style={{ objectFit: "cover" }} sizes="(max-width: 768px) 100vw, 400px" />
         </div>
         <div className='p-4'>
-            <h3 className='text-lg font-bold mb-2 text-left'>{news.title}</h3>
+            <h3 className='text-lg font-bold mb-2 text-left hover:text-purple-900 truncate'>{news.title}</h3>
             <p className="text-sm text-gray-600 mb-1">{news.author}</p>
             <p className="text-sm text-gray-600 mb-1">{news.datetime}</p>
             <p className="text-sm text-gray-900 mb-1">{news.publisher}</p>

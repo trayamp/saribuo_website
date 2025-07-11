@@ -1,57 +1,57 @@
 export const latestNews = [
  {
     id:0,
-    image: "/images/kabataanthumbnail.jpg",
-    title: "Kabataan Party-list expels member over sexual misconduct",
-    author: "Kristine Daguno-Bersamina",
-    datetime: "June 7, 2025 | 12:10pm",
-    publisher: "Philstar",
-    link: "https://www.philstar.com/headlines/2025/06/07/2448817/kabataan-party-list-expels-member-over-sexual-misconduct"
+    image: "/images/highproportionsofmenandwomen.gif",
+    title: " High proportions of men and women unable to meet 'fertility intentions' —UNFPA report",
+    author: "Jiselle Anne C. Casucian, GMA Integrated News ",
+    datetime: "July 12, 2025 | 1:34 AM",
+    publisher: "GMA News and Public Affairs",
+    link: "https://www.gmanetwork.com/news/topstories/nation/952335/high-proportions-of-men-and-women-unable-to-meet-fertility-intentions-unfpa-report/story/"
  },
 {
     id:1,
-    image: "/images/updiliman.avif",
-    title: "For Pride month, CHR urges new Congress to pass SOGIE, anti-discrimination bills",
-    author: "Jauhn Etienne Villaruel",
-    datetime: "June 6, 2025 | 1:56pm",
-    publisher: "ABS-CBN News",
-    link: "https://www.abs-cbn.com/news/nation/2025/6/6/for-pride-month-chr-urges-new-congress-to-pass-sogie-anti-discrimination-bills-1356"
+    image: "/images/empoweredwomen.jpg",
+    title: "Empowered women lead the way",
+    author: "OH YES, IT'S JOHNNY - Johnny Litton - The Philippine Star",
+    datetime: "July 12, 2025 | 12:00 AM",
+    publisher: "The Philippine Star",
+    link: "https://www.philstar.com/lifestyle/2025/07/12/2457259/empoweredwomen-lead-theway"
 },
 {
     id:2,
-    image: "/images/she-leads-mondelez_2025-06-03_15-08-22.jpg",
-    title: "Mondelez International: Where trailblazing women take the lead and break traditional roles",
-    author: "Philstar.com | Biz Memos",
-    datetime: "June 6, 2025 | 9:30am",
-    publisher: "Philstar",
-    link: "https://www.gmanetwork.com/news/lifestyle/content/941328/pride-ph-announces-pride-march-2025-set-for-june-28/story/"
+    image: "/images/genderresponsivepfm.webp",
+    title: "Gender-responsive PFM: Fostering equity and inclusion",
+    author: "Amenah F. Pangandaman, DBM Secretary",
+    datetime: "July 9, 2025 | 12:05 AM- Updated Jul 8, 2025 | 04:29 PM",
+    publisher: "Manila Bulletin",
+    link: "https://mb.com.ph/2025/07/09/gender-responsive-pfm-fostering-equity-and-inclusion"
 },
 {
     id:3,
-    image: "/images/ian-sia-pasig_2025-04-07_15-43-07.jpg",
-    title: "Supreme Court urged to impose sanctions on Pasig congressional bet over solo parent 'joke'",
-    author: "Ian Laqui",
-    datetime: "April 7, 2025 | 4:31pm",
-    publisher: "Philstar",
-    link: "https://www.philstar.com/nation/2025/04/07/2434195/supreme-court-urged-impose-sanctions-pasig-congressional-bet-over-solo-parent-joke"
+    image: "/images/sogiescotherprolgbtq.webp",
+    title: "SOGIESC, other pro-LGBTQIA+ bills up for refiling in 20th Congress",
+    author: "Joseph Pedrajas",
+    datetime: "June 28, 2025 | 07:38 PM",
+    publisher: "Manila Bulletin",
+    link: "https://mb.com.ph/2025/06/28/sogiesc-other-pro-lgbtqia-bills-up-for-refiling-in-20th-congress"
 },
 {
     id:4,
-    image: "/images/love-laban_2025_04_02_08_36_21.jpg",
-    title: "Pride PH announces Pride March 2025 set for June 28",
-    author: "GMA Integrated News | Photo: Pride PH",
-    datetime: "April 2, 2025 | 8:43am",
-    publisher: "GMA Network",
-    link: "https://www.gmanetwork.com/news/lifestyle/content/941328/pride-ph-announces-pride-march-2025-set-for-june-28/story/"
+    image: "/images/despitetherainprideph.webp",
+    title: "Despite the rain, Pride stood tall at Lov3Laban sa Diliman",
+    author: "Izzy Lee | Photo: Maria Tan",
+    datetime: "June 28, 2025 | 09:10 PM",
+    publisher: "ABS-CBN News",
+    link: "https://www.abs-cbn.com/news/nation/2025/6/28/despite-the-rain-pride-stood-tall-at-lov3laban-sa-diliman-2110"
 },
 {
     id:5,
-    image: "/images/safespaces.jpg",
-    title: "Poll bets' sexist remarks prompt Comelec to declare campaign venues as 'safe spaces",
-    author: "Cristina Chi",
-    datetime: "April 8, 2025 | 6:14pm",
-    publisher: "Philstar",
-    link: "https://www.philstar.com/headlines/2025/04/08/2434506/poll-bets-sexist-remarks-prompt-comelec-declare-campaign-venues-safe-spaces"
+    image: "/images/chrpantay.jpg",
+    title: "CHR, PANTAY ink partnership to advance gender equality in schools",
+    author: "GMA Integrated News ",
+    datetime: "June 11, 2025 | 10:35 AM",
+    publisher: "GMA News and Public Affairs",
+    link: "https://www.gmanetwork.com/news/topstories/nation/949041/pantay-ink-partnership-to-advance-gender-equality-in-schools/story/"
 },
 
 ]

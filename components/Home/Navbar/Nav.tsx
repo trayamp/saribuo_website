@@ -42,13 +42,13 @@ const Nav = ({ openNav }: Props) => {
   return (
     <>
       <div
-        className={`fixed top-0 left-0 w-full h-[7vh] z-[1000] bg-white bg-opacity-90 backdrop-blur-md shadow-lg transition-transform duration-300 ${
+        className={`fixed top-0 left-0 w-full h-16 md:h-20 z-[1000] bg-white bg-opacity-90 backdrop-blur-md shadow-lg transition-transform duration-300 ${
           showNav ? "translate-y-0" : "-translate-y-full"
         }`}
       >
         <div className="flex items-center justify-between w-full xl:w-[95%] mx-auto h-full">
           {/* Logo Section */}
-          <Link href="/" className="flex items-center space-x-2 mt-1">
+          <Link href="/" className="flex items-center space-x-2">
             <Image
               src="/images/saribuologo.png"
               alt="Saribuo Logo"

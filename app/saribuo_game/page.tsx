@@ -1,42 +1,23 @@
 'use client';
-import React, { useRef, useState } from "react";
-import { Pixelify_Sans } from "next/font/google";
+import React from 'react';
+import { Pixelify_Sans } from 'next/font/google';
 
-const pixelify = Pixelify_Sans({ subsets: ["latin"] });
+const pixelify = Pixelify_Sans({ subsets: ['latin'] });
 
-const AboutPage = () => {
-  const audioRef = useRef<HTMLAudioElement>(null);
-  const [audioStarted, setAudioStarted] = useState(false);
-
-  const handlePlaySound = () => {
-    if (audioRef.current) {
-      audioRef.current.play();
-      setAudioStarted(true);
-    }
-  };
-
+const SaribuoPage = () => {
   return (
-    <main className="min-h-screen bg-white text-gray-800 overflow-hidden">
-      {/*background*/}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute top-0 left-0 w-full h-full object-cover z-0"
-      >
-        <source src="/images/pixelsamplevideocomingsoon.mp4" type="video/mp4" />
-        Your browser does not support the video tag.
-      </video>
+    <main className="min-h-screen relative bg-black overflow-hidden text-white">
+      {/* Background Image */}
+      <div
+        className="absolute left-0 right-0 bottom-10 bg-center bg-cover"
+        style={{ top: "100px", backgroundImage: "url('/images/saribuo_gamebg.png')" }}
+      />
 
-      {/* music */}
-      <audio ref={audioRef} src="/images/arcade sirena_mixdown.mp3" loop />
+      {/* black layer thingy */}
+      <div className="absolute inset-0 bg-black/70" />
 
-      {/* dark overlay here */}
-      <div className="absolute inset-0 bg-black/70 bg-opacity-80 z-10" />
-
-      {/* content */}
-      <div className="relative z-20 flex flex-col items-center justify-center min-h-screen px-4 text-center text-white">
+      {/* yt vid center */}
+      <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 text-center">
         <h1
           className="text-4xl sm:text-6xl md:text-7xl font-bold mb-4 font-pixelify"
           style={{ fontFamily: pixelify.style.fontFamily }}
@@ -47,20 +28,23 @@ const AboutPage = () => {
           className="max-w-sm sm:max-w-xl text-sm sm:text-lg px-2 font-pixelify"
           style={{ fontFamily: pixelify.style.fontFamily }}
         >
-        09&nbsp;&nbsp;&nbsp;13&nbsp;&nbsp;&nbsp;2025
+          09&nbsp;&nbsp;&nbsp;13&nbsp;&nbsp;&nbsp;2025
         </p>
 
-        {!audioStarted && (
-          <button
-            onClick={handlePlaySound}
-            className="mt-6 px-4 py-2 bg-white text-black font-bold rounded-xl shadow-xl hover:bg-gray-200 transition"
-          >
-           
-          </button>
-        )}
+        {/*yt link ofc */}
+        <div className="mt-8 w-full max-w-xl aspect-video">
+          <iframe
+            className="w-full h-full rounded-lg shadow-lg"
+            src="https://www.youtube.com/embed/mjTDHGSWTls"
+            title="YouTube video player"
+            frameBorder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+            allowFullScreen
+          />
+        </div>
       </div>
     </main>
   );
 };
 
-export default AboutPage;
+export default SaribuoPage;
