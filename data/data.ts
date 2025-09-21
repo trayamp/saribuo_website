@@ -1,6 +1,16 @@
 export const latestNews = [
- {
+
+{
     id:0,
+    image: "/images/peoplepower.jpg",
+    title: "September 21 protesters begin to assemble at EDSA People Power Monument",
+    author: "Jovilland Rita, GMA Integrated News ",
+    datetime: "September 21, 2025 | 8:42 AM",
+    publisher: "GMA News and Public Affairs",
+    link: "https://www.gmanetwork.com/news/topstories/nation/959821/edsa-people-power-monument-rally-september-21/story/"
+ },
+ {
+    id:1,
     image: "/images/highproportionsofmenandwomen.gif",
     title: " High proportions of men and women unable to meet 'fertility intentions' —UNFPA report",
     author: "Jiselle Anne C. Casucian, GMA Integrated News ",
@@ -9,7 +19,7 @@ export const latestNews = [
     link: "https://www.gmanetwork.com/news/topstories/nation/952335/high-proportions-of-men-and-women-unable-to-meet-fertility-intentions-unfpa-report/story/"
  },
 {
-    id:1,
+    id:3,
     image: "/images/empoweredwomen.jpg",
     title: "Empowered women lead the way",
     author: "OH YES, IT'S JOHNNY - Johnny Litton - The Philippine Star",
@@ -18,7 +28,7 @@ export const latestNews = [
     link: "https://www.philstar.com/lifestyle/2025/07/12/2457259/empoweredwomen-lead-theway"
 },
 {
-    id:2,
+    id:4,
     image: "/images/genderresponsivepfm.webp",
     title: "Gender-responsive PFM: Fostering equity and inclusion",
     author: "Amenah F. Pangandaman, DBM Secretary",
@@ -27,7 +37,7 @@ export const latestNews = [
     link: "https://mb.com.ph/2025/07/09/gender-responsive-pfm-fostering-equity-and-inclusion"
 },
 {
-    id:3,
+    id:5,
     image: "/images/sogiescotherprolgbtq.webp",
     title: "SOGIESC, other pro-LGBTQIA+ bills up for refiling in 20th Congress",
     author: "Joseph Pedrajas",
@@ -36,16 +46,7 @@ export const latestNews = [
     link: "https://mb.com.ph/2025/06/28/sogiesc-other-pro-lgbtqia-bills-up-for-refiling-in-20th-congress"
 },
 {
-    id:4,
-    image: "/images/despitetherainprideph.webp",
-    title: "Despite the rain, Pride stood tall at Lov3Laban sa Diliman",
-    author: "Izzy Lee | Photo: Maria Tan",
-    datetime: "June 28, 2025 | 09:10 PM",
-    publisher: "ABS-CBN News",
-    link: "https://www.abs-cbn.com/news/nation/2025/6/28/despite-the-rain-pride-stood-tall-at-lov3laban-sa-diliman-2110"
-},
-{
-    id:5,
+    id:6,
     image: "/images/chrpantay.jpg",
     title: "CHR, PANTAY ink partnership to advance gender equality in schools",
     author: "GMA Integrated News ",
